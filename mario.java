@@ -17,12 +17,19 @@ public class mario {
             }
         } while (!flag);
         scnr.close();
-
+        // first for loop 
         for(int i = 0; i < height; ++i ) {
-            // use of a sentinal
+            // use of sentinals
+            if ( height > 8 ) {
+                System.out.println("follow instructions please");
+                // not sure what the return statement does
+                return;
+            }
+            //sentinal 2
             for (int k =height - i - 1; k > 0; --k) {
                 System.out.print(".");
             }
+            // sentinal 3
             for (int j = 0; j < i +1; ++j) {
                 System.out.print("#");
             }
