@@ -18,9 +18,14 @@ public class mario {
         } while (!flag);
         scnr.close();
 
-        for(int i = 0; i < height; i++ ) {
+        for(int i = 0; i < height; ++i ) {
             // use of a sentinal
-            System.out.print("#");
+            for (int k =height - i - 1; k > 0; --k) {
+                System.out.print(".");
+            }
+            for (int j = 0; j < i +1; ++j) {
+                System.out.print("#");
+            }
             System.out.println();
         }
 
